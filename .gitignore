@@ -1,0 +1,14 @@
+.DS_Store
+node_modules/
+/dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 忽略WebStorm、VSCode开发时，生成的缓存文件
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
