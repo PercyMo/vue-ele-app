@@ -1,12 +1,18 @@
 <template>
     <div>
         profile
+        <foot-guide></foot-guide>
     </div>
 </template>
 
 <script>
-export default {
-}
+    import FootGuide from 'components/footer/footGuide'
+
+    export default {
+        components: {
+            FootGuide
+        }
+    }
 </script>
 
 <style scoped lang="stylus" rel="stylesheet/stylus">

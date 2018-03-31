@@ -1,23 +1,44 @@
 <template>
-    <div class="foot_guide">
+    <div id="foot_guide">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;width:0;height:0">
 	    	<defs>
-	    		<symbol viewBox="0 0 40 40" id="msite"><g fill="none" fill-rule="evenodd" stroke="#666" stroke-width="2"><path d="M31.426 23.095l2.678 5.742 2.943-1.372a3.173 3.173 0 0 0 1.537-4.212l-1.339-2.871-5.819 2.713z"></path><path d="M29.074 31.161c-1.224-.49-2.404-.32-3.49.185-6.383 2.977-13.938.286-16.875-6.01-2.936-6.297-.14-13.815 6.243-16.792 5.211-2.43 11.203-1.083 14.825 2.919l-12.263 5.718c-1.596.745-2.295 2.624-1.561 4.198.734 1.574 2.625 2.246 4.22 1.503l8.422-3.928 9.953-4.641a18.78 18.78 0 0 0-.941-2.453C33.202 2.416 21.869-1.62 12.294 2.844 2.718 7.309-1.474 18.586 2.93 28.03c4.404 9.445 15.737 13.482 25.313 9.017 1.069-.499 2.067-.879 3.438-1.744 0 0-1.382-3.651-2.607-4.142z"></path></g></symbol>
-				
-				<symbol xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 40 40" id="msiteActive"><defs><linearGradient id="index.18edf5a_c" x1="50%" x2="50%" y1="100%" y2="0%"><stop offset="0%" stop-color="#2BAEFF"></stop><stop offset="100%" stop-color="#0095FF"></stop></linearGradient><linearGradient id="index.18edf5a_d" x1="50%" x2="50%" y1="100%" y2="0%"><stop offset="0%" stop-color="#29ADFF"></stop><stop offset="100%" stop-color="#0095FF"></stop></linearGradient><path id="index.18edf5a_a" d="M30.426 22.095l2.678 5.742 2.943-1.372a3.173 3.173 0 0 0 1.537-4.212l-1.339-2.871-5.819 2.713z"></path><mask id="index.18edf5a_e" width="9.455" height="10.456" x="-1" y="-1"><path fill="#fff" d="M29.426 18.382h9.455v10.456h-9.455z"></path><use xlink:href="#index.18edf5a_a"></use></mask><path id="index.18edf5a_b" d="M28.074 30.161c-1.224-.49-2.404-.32-3.49.185-6.383 2.977-13.938.286-16.875-6.01-2.936-6.297-.14-13.815 6.243-16.792 5.211-2.43 11.203-1.083 14.825 2.919l-12.263 5.718c-1.596.745-2.295 2.624-1.561 4.198.734 1.574 2.625 2.246 4.22 1.503l8.422-3.928 9.953-4.641a18.78 18.78 0 0 0-.941-2.453C32.202 1.416 20.869-2.62 11.294 1.844 1.718 6.309-2.474 17.586 1.93 27.03c4.404 9.445 15.737 13.482 25.313 9.017 1.069-.499 2.067-.879 3.438-1.744 0 0-1.382-3.651-2.607-4.142z"></path><mask id="index.18edf5a_f" width="38.769" height="39.241" x="-.7" y="-.7"><path fill="#fff" d="M-.521-.675h38.769v39.241H-.521z"></path><use xlink:href="#index.18edf5a_b"></use></mask></defs><g fill="none" fill-rule="evenodd"><g transform="translate(1 1)"><use fill="url(#index.18edf5a_c)" xlink:href="#index.18edf5a_a"></use><use stroke="url(#index.18edf5a_d)" stroke-width="2" mask="url(#index.18edf5a_e)" xlink:href="#index.18edf5a_a"></use></g><g transform="translate(1 1)"><use fill="url(#index.18edf5a_c)" xlink:href="#index.18edf5a_b"></use><use stroke="url(#index.18edf5a_d)" stroke-width="1.4" mask="url(#index.18edf5a_f)" xlink:href="#index.18edf5a_b"></use></g></g></symbol>
+                <symbol viewBox="0 0 22 22" id="msite">
+                    <path fill="#818181" fill-rule="nonzero" d="M7.924 6.273A5.597 5.597 0 0 0 5.48 9.828a5.596 5.596 0 0 0 .787 4.242 5.646 5.646 0 0 0 7.793 1.66 2.188 2.188 0 0 1 3.02.638l.43.663c.377.58.247 1.358-.3 1.798a10 10 0 0 1-.771.555 9.93 9.93 0 0 1-7.523 1.395 9.937 9.937 0 0 1-6.306-4.334C-.393 11.82.926 5.618 5.55 2.615a9.935 9.935 0 0 1 7.523-1.393 9.937 9.937 0 0 1 6.781 5.148c.318.64.12 1.396-.467 1.777l-8.54 5.546c-.632.41-1.478.23-1.89-.401l-.443-.684a2.182 2.182 0 0 1 .641-3.016l5.011-3.255a5.612 5.612 0 0 0-6.242-.064zm6.813 10.507c-3.184 2.062-7.453 1.152-9.519-2.03a6.846 6.846 0 0 1-.96-5.182 6.847 6.847 0 0 1 2.986-4.344 6.869 6.869 0 0 1 8.13.46.892.892 0 0 1-.098 1.422l-5.44 3.534a.932.932 0 0 0-.274 1.287l.444.684a.117.117 0 0 0 .16.034l8.54-5.547c.05-.032.067-.095.035-.16a8.687 8.687 0 0 0-5.928-4.494 8.685 8.685 0 0 0-6.583 1.22c-4.044 2.627-5.198 8.056-2.572 12.1a8.686 8.686 0 0 0 5.517 3.792 8.68 8.68 0 0 0 6.583-1.22c.231-.15.458-.314.672-.483.047-.038.057-.102.032-.142l-.43-.662a.938.938 0 0 0-1.295-.269zm5.88-5.517c.714 1.099.4 2.571-.697 3.284l-.851.553a1.362 1.362 0 0 1-1.882-.401l-1.103-1.7a1.362 1.362 0 0 1 .4-1.882l1.699-1.102a1.357 1.357 0 0 1 1.883.399l.552.85zm-1.6-.168a.107.107 0 0 0-.07-.048.107.107 0 0 0-.083.016l-1.699 1.102a.112.112 0 0 0-.032.154l1.102 1.698c.021.032.056.05.095.05a.108.108 0 0 0 .06-.016l.849-.552c.519-.337.667-1.035.33-1.555l-.551-.849z"></path>
+                </symbol>
 
-				<symbol xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 40 40" id="find"><defs><path id="discover-regular.8ef537f_a" d="M20 40c11.046 0 20-8.954 20-20S31.046 0 20 0 0 8.954 0 20s8.954 20 20 20z"></path><mask id="discover-regular.8ef537f_b" width="40" height="40" x="0" y="0" fill="#fff"><use xlink:href="#discover-regular.8ef537f_a"></use></mask></defs><g fill="none" fill-rule="evenodd"><use stroke="#666" stroke-width="4" mask="url(#discover-regular.8ef537f_b)" xlink:href="#discover-regular.8ef537f_a"></use><path stroke="#666" stroke-width="2" d="M12.79 28.126c-1.515.68-2.169.016-1.462-1.484l3.905-8.284c.47-.999 1.665-2.198 2.66-2.675l8.484-4.064c1.497-.717 2.153-.08 1.46 1.435l-3.953 8.64c-.46 1.006-1.647 2.186-2.655 2.64l-8.44 3.792z"></path><path fill="#666" d="M15.693 24.636c-.692.276-1.02-.06-.747-.746l2.21-4.946c.225-.505.721-.602 1.122-.202l2.563 2.563c.394.394.31.893-.203 1.122l-4.945 2.209z"></path></g></symbol>
-				
-                <symbol xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 40 40" id="findActive"><defs><path id="discover-regular.8ef537f_a" d="M20 40c11.046 0 20-8.954 20-20S31.046 0 20 0 0 8.954 0 20s8.954 20 20 20z"></path><mask id="discover-regular.8ef537f_b" width="40" height="40" x="0" y="0" fill="#fff"><use xlink:href="#discover-regular.8ef537f_a"></use></mask></defs><g fill="none" fill-rule="evenodd"><use stroke="#3190e8" stroke-width="4" mask="url(#discover-regular.8ef537f_b)" xlink:href="#discover-regular.8ef537f_a"></use><path stroke="#3190e8" stroke-width="2" d="M12.79 28.126c-1.515.68-2.169.016-1.462-1.484l3.905-8.284c.47-.999 1.665-2.198 2.66-2.675l8.484-4.064c1.497-.717 2.153-.08 1.46 1.435l-3.953 8.64c-.46 1.006-1.647 2.186-2.655 2.64l-8.44 3.792z"></path><path fill="#3190e8" d="M15.693 24.636c-.692.276-1.02-.06-.747-.746l2.21-4.946c.225-.505.721-.602 1.122-.202l2.563 2.563c.394.394.31.893-.203 1.122l-4.945 2.209z"></path></g></symbol>
+                <symbol viewBox="0 0 22 22" id="msiteActive">
+                    <defs><linearGradient id="msite-a" x1="0%" y1="50%" y2="50%"><stop offset="0%" stop-color="#0AF"></stop><stop offset="100%" stop-color="#0085FF"></stop></linearGradient></defs>
+                    <path fill="url(#msite-a)" fill-rule="evenodd" d="M16.822 17.089l.456.707c.212.33.14.778-.174 1.033a9.91 9.91 0 0 1-.767.555 9.817 9.817 0 0 1-7.473 1.395 9.867 9.867 0 0 1-6.265-4.334C-.383 11.822.927 5.618 5.52 2.616a9.81 9.81 0 0 1 7.475-1.394 9.866 9.866 0 0 1 6.264 4.334c.166.258.323.528.466.803.19.385.072.82-.262 1.039l-9.05 5.916a.783.783 0 0 1-1.086-.232l-.47-.73a1.668 1.668 0 0 1 .484-2.295l5.766-3.769a.286.286 0 0 0 .03-.455 6.576 6.576 0 0 0-7.821-.434 6.636 6.636 0 0 0-2.877 4.213 6.671 6.671 0 0 0 .926 5.026c1.99 3.085 6.104 3.968 9.17 1.969a1.65 1.65 0 0 1 2.288.482zm3.878-5.445c.56.863.314 2.02-.549 2.58l-.906.59a.786.786 0 0 1-1.086-.232l-1.177-1.812a.787.787 0 0 1 .23-1.086l1.813-1.176a.783.783 0 0 1 1.086.23l.589.906z"></path>
+                </symbol>
 
-				<symbol xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 38 38" id="order"><defs><rect id="order-regular.41c17f8_a" width="38" height="38" rx="2"></rect><mask id="order-regular.41c17f8_b" width="38" height="38" x="0" y="0" fill="#fff"><use xlink:href="#order-regular.41c17f8_a"></use></mask></defs><g fill="none" fill-rule="evenodd"><use stroke="#666" stroke-width="4" mask="url(#order-regular.41c17f8_b)" xlink:href="#order-regular.41c17f8_a"></use><rect width="24" height="2" x="7" y="8" fill="#666" rx="1"></rect><rect width="20" height="2" x="7" y="17" fill="#666" rx="1"></rect><rect width="8" height="2" x="7" y="26" fill="#666" rx="1"></rect></g></symbol>
+                <symbol viewBox="0 0 22 22" id="find">
+                    <path fill="#818181" fill-rule="nonzero" d="M16.62 2.727a.75.75 0 0 1-.844 1.24 8.455 8.455 0 0 0-4.095-1.44 8.5 8.5 0 0 0-9.153 7.792 8.499 8.499 0 0 0 7.79 9.153 8.5 8.5 0 0 0 9.154-7.791 8.46 8.46 0 0 0-1.435-5.449.75.75 0 1 1 1.24-.842 9.96 9.96 0 0 1 1.69 6.411c-.442 5.505-5.264 9.609-10.768 9.166-5.505-.442-9.61-5.263-9.166-10.768C1.475 4.694 6.296.59 11.8 1.033c1.75.14 3.398.727 4.819 1.694zM14.638 7c.244 0 .44.254.331.506l-1.9 4.39c-.11.255-.264.494-.471.702-.21.21-.454.367-.712.476l-4.38 1.895a.363.363 0 0 1-.476-.476l1.895-4.38c.11-.258.266-.5.477-.711.207-.208.447-.362.7-.471l4.391-1.9A.367.367 0 0 1 14.638 7zM12.45 9.55l-1.751.757a.737.737 0 0 0-.237.156.753.753 0 0 0-.156.236l-.758 1.752 1.742-.753a.766.766 0 0 0 .247-.161.733.733 0 0 0 .154-.234l.76-1.754z"></path>
+                </symbol>
 
-				<symbol viewBox="0 0 38 38" id="orderActive"><defs><linearGradient id="order.070ae2a_a" x1="50%" x2="50%" y1="100%" y2="0%"><stop offset="0%" stop-color="#2BAEFF"></stop><stop offset="100%" stop-color="#0095FF"></stop></linearGradient></defs><g fill="none" fill-rule="evenodd"><rect width="38" height="38" fill="url(#order.070ae2a_a)" rx="2"></rect><rect width="24" height="2" x="7" y="8" fill="#FFF" rx="1"></rect><rect width="20" height="2" x="7" y="17" fill="#FFF" rx="1"></rect><rect width="8" height="2" x="7" y="26" fill="#FFF" rx="1"></rect></g></symbol>
+                <symbol viewBox="0 0 22 22" id="findActive">
+                    <defs>
+                    <linearGradient id="find-a" x1="0%" y1="50%" y2="50%"><stop offset="0%" stop-color="#0AF"></stop><stop offset="100%" stop-color="#0085FF"></stop></linearGradient>
+                    </defs>
+                    <path fill="url(#find-a)" fill-rule="evenodd" d="M3.929 3.929c3.899-3.9 10.243-3.9 14.142 0 3.899 3.899 3.899 10.243 0 14.142-3.899 3.9-10.243 3.9-14.142 0-3.9-3.899-3.9-10.243 0-14.142zM14.639 7a.363.363 0 0 0-.146.03l-4.39 1.901c-.254.11-.493.264-.701.471a2.23 2.23 0 0 0-.476.712l-1.896 4.38a.363.363 0 0 0 .476.476l4.38-1.896a2.203 2.203 0 0 0 1.183-1.178l1.9-4.39A.363.363 0 0 0 14.64 7zM11 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"></path>
+                </symbol>
 
-				<symbol xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 38 38" id="profile"><defs><path id="profile-regular.c151d62_a" d="M10 11.833V8.999A8.999 8.999 0 0 1 19 0c4.97 0 9 4.04 9 8.999v2.834l-.013.191C27.657 16.981 23.367 21 19 21c-4.616 0-8.64-4.02-8.987-8.976L10 11.833z"></path><mask id="profile-regular.c151d62_c" width="18" height="21" x="0" y="0" fill="#fff"><use xlink:href="#profile-regular.c151d62_a"></use></mask><path id="profile-regular.c151d62_b" d="M0 32.675C0 26.763 10.139 22 19.027 22 27.916 22 38 26.763 38 32.757v3.312C38 37.136 37.098 38 35.997 38H2.003C.897 38 0 37.137 0 36.037v-3.362z"></path><mask id="profile-regular.c151d62_d" width="38" height="16" x="0" y="0" fill="#fff"><use xlink:href="#profile-regular.c151d62_b"></use></mask></defs><g fill="none" fill-rule="evenodd" stroke="#666" stroke-width="4"><use mask="url(#profile-regular.c151d62_c)" xlink:href="#profile-regular.c151d62_a"></use><use mask="url(#profile-regular.c151d62_d)" xlink:href="#profile-regular.c151d62_b"></use></g></symbol>
+                <symbol viewBox="0 0 22 22" id="order">
+                    <path fill="#818181" fill-rule="nonzero" d="M7.25 8a.75.75 0 0 1 0-1.5h7.5a.75.75 0 1 1 0 1.5h-7.5zm0 5.004a.75.75 0 1 1 0-1.5h4.498a.75.75 0 1 1 0 1.5H7.25zM3.5 3v16h9.75c2.9 0 5.25-2.35 5.25-5.25V5.748a.75.75 0 1 1 1.5 0v8.002a6.75 6.75 0 0 1-6.75 6.75H2.75a.75.75 0 0 1-.75-.75V2.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 1 1 0 1.5H3.5z"></path>
+                </symbol>
 
-				<symbol viewBox="0 0 38 38" id="profileActive"><defs><linearGradient id="profile.dbc5ebf_a" x1="50%" x2="50%" y1="100%" y2="0%"><stop offset="0%" stop-color="#2BAEFF"></stop><stop offset="100%" stop-color="#0095FF"></stop></linearGradient></defs><path fill="url(#profile.dbc5ebf_a)" fill-rule="evenodd" d="M10 11.833V8.999A8.999 8.999 0 0 1 19 0c4.97 0 9 4.04 9 8.999v2.834l-.013.191C27.657 16.981 23.367 21 19 21c-4.616 0-8.64-4.02-8.987-8.976L10 11.833zM0 32.675C0 26.763 10.139 22 19.027 22 27.916 22 38 26.763 38 32.757v3.312C38 37.136 37.098 38 35.997 38H2.003C.897 38 0 37.137 0 36.037v-3.362z"></path></symbol>
+                <symbol viewBox="0 0 22 22" id="orderActive">
+                    <defs><linearGradient id="order-a" x1="0%" y1="50%" y2="50%"><stop offset="0%" stop-color="#0AF"></stop><stop offset="100%" stop-color="#0085FF"></stop></linearGradient></defs>
+                    <path fill="url(#order-a)" fill-rule="evenodd" d="M2.75 1.5h16.5a.75.75 0 0 1 .75.75v11.5a6.758 6.758 0 0 1-6.75 6.75H2.75a.75.75 0 0 1-.75-.75V2.25a.75.75 0 0 1 .75-.75zm12 6.5a.75.75 0 0 0 0-1.5h-7.5a.75.75 0 0 0 0 1.5h7.5zm-3.002 5.003a.75.75 0 0 0 0-1.5H7.25a.75.75 0 0 0 0 1.5h4.498z"></path>
+                </symbol>
 
+                <symbol viewBox="0 0 22 22" id="profile">
+                    <path fill="#818181" fill-rule="nonzero" d="M10.955 12H7.75a5.25 5.25 0 0 0-5.25 5.25v2.25h17v-2.25a5.244 5.244 0 0 0-2.626-4.548.75.75 0 0 1 .75-1.3l.183.11A6.745 6.745 0 0 1 21 17.25v3a.75.75 0 0 1-.75.75H1.75a.75.75 0 0 1-.75-.75v-3a6.75 6.75 0 0 1 6.436-6.743A4.984 4.984 0 0 1 6 7V6a5 5 0 0 1 10 0v1a5 5 0 0 1-5.045 5zM11 10.5A3.5 3.5 0 0 0 14.5 7V6a3.5 3.5 0 0 0-7 0v1a3.5 3.5 0 0 0 3.5 3.5z"></path>
+                </symbol>
+
+                <symbol viewBox="0 0 22 22" id="profileActive">
+                    <defs><linearGradient id="profile-a" x1="0%" y1="50%" y2="50%"><stop offset="0%" stop-color="#0AF"></stop><stop offset="100%" stop-color="#0085FF"></stop></linearGradient></defs>
+                    <path fill="url(#profile-a)" fill-rule="evenodd" d="M11 1c2.757 0 5 2.243 5 5v1c0 2.757-2.243 5-5 5S6 9.757 6 7V6c0-2.757 2.243-5 5-5zm5.967 10.071A6.76 6.76 0 0 1 21 17.251v3a.75.75 0 0 1-.75.75H1.75a.75.75 0 0 1-.75-.75v-3a6.76 6.76 0 0 1 4.033-6.18.992.992 0 0 1 1.135.263A6.476 6.476 0 0 0 11 13.5c1.919 0 3.642-.84 4.832-2.166a.993.993 0 0 1 1.135-.263z"></path>
+                </symbol>
 	    	</defs>
     	</svg>
         <a class="guide_item" @click="gotoAddress('/msite')">
@@ -50,8 +71,6 @@
 <script>
 export default {
     mounted() {
-        console.log(this.$route)
-        console.log(this.$route.path.indexOf('msite'))
     },
     methods: {
         gotoAddress(path) {
@@ -61,5 +80,32 @@ export default {
 }
 </script>
 
-<style scoped lang="stylus" rel="stylesheet/stylus">
+<style lang="stylus" rel="stylesheet/stylus">
+    @import "~assets/style/mixin"
+
+    #foot_guide
+        width 100%
+        height 1.95rem
+        display flex
+        align-items center
+        position fixed
+        z-index 9999
+        bottom 0
+        left 0
+        right 0
+        align-items center
+        background #fff
+        box-shadow 0 -0.026667rem 0.053333rem rgba(0, 0, 0,.1)
+    .guide_item
+        display block
+        flex 1
+        text-align center
+        .icon_style
+            width .8rem
+            height .8rem
+            fill #ccc
+        span
+            display block
+            color #666
+            font-size .42rem
 </style>
