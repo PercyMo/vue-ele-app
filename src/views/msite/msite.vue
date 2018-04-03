@@ -9,6 +9,8 @@
     import FootGuide from 'components/footer/footGuide'
 
     export default {
+        mounted() {
+        },
         components: {
             FootGuide
         }

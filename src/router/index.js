@@ -4,6 +4,8 @@ import {routerMode} from '../config/env'
 
 Vue.use(Router)
 
+const Home = r => require.ensure([], () => r(require('views/home/home')), 'Home')
+
 const Msite = r => require.ensure([], () => r(require('views/msite/msite')), 'Msite')
 
 const Search = r => require.ensure([], () => r(require('views/search/search')), 'Search')
@@ -17,9 +19,10 @@ const Find = r => require.ensure([], () => r(require('views/find/find')), 'Find'
 export default new Router({
     mode: routerMode,
     routes: [
+        // 地址为空时，跳转home页面
         {
             path: '/',
-            component: Msite //首屏重定向
+            component: Home
         },
         // 所有商铺列表页
         {

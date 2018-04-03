@@ -1,5 +1,5 @@
 <template>
-    <div id="foot_guide">
+    <div id="foot-guide">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;width:0;height:0">
 	    	<defs>
                 <symbol viewBox="0 0 22 22" id="msite">
@@ -41,26 +41,26 @@
                 </symbol>
 	    	</defs>
     	</svg>
-        <a class="guide_item" @click="gotoAddress('/msite')">
-            <svg class="icon_style">
+        <a class="guide-item" @click="gotoAddress('/msite')">
+            <svg class="icon-style">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" :xlink:href="$route.path.indexOf('msite') !== -1 ? '#msiteActive' : '#msite'"></use>
             </svg>
             <span>外卖</span>
         </a>
-        <a class="guide_item" @click="gotoAddress('/search')">
-            <svg class="icon_style">
+        <a class="guide-item" @click="gotoAddress('/search')">
+            <svg class="icon-style">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" :xlink:href="$route.path.indexOf('search') !== -1 ? '#findActive' : '#find'"></use>
             </svg>
             <span>搜索</span>
         </a>
-        <a class="guide_item" @click="gotoAddress('/order')">
-            <svg class="icon_style">
+        <a class="guide-item" @click="gotoAddress('/order')">
+            <svg class="icon-style">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" :xlink:href="$route.path.indexOf('order') !== -1 ? '#orderActive' : '#order'"></use>
             </svg>
             <span>订单</span>
         </a>
-        <a class="guide_item" @click="gotoAddress('/profile')">
-            <svg class="icon_style">
+        <a class="guide-item" @click="gotoAddress('/profile')">
+            <svg class="icon-style">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" :xlink:href="$route.path.indexOf('profile') !== -1 ? '#profileActive' : '#profile'"></use>
             </svg>
             <span>我的</span>
@@ -83,7 +83,7 @@ export default {
 <style lang="stylus" rel="stylesheet/stylus">
     @import "~assets/style/mixin"
 
-    #foot_guide
+    #foot-guide
         width 100%
         height 1.95rem
         display flex
@@ -93,14 +93,17 @@ export default {
         bottom 0
         left 0
         right 0
-        align-items center
         background #fff
-        box-shadow 0 -0.026667rem 0.053333rem rgba(0, 0, 0,.1)
-    .guide_item
+        box-shadow 0 -0.026667rem 0.053333rem rgba(0, 0, 0, .1)
+    .guide-item
         display block
         flex 1
+        font-size 0
+        flex-direction row-reverse
+        justify-content center
         text-align center
-        .icon_style
+        .icon-style
+            margin-bottom 2px
             width .8rem
             height .8rem
             fill #ccc

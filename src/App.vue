@@ -3,12 +3,18 @@
         <keep-alive>
             <router-view></router-view>
         </keep-alive>
+        <svg-icon></svg-icon>
     </div>
 </template>
 
 <script>
-export default {
-}
+    import SvgIcon from 'components/common/svg'
+
+    export default {
+        components: {
+            SvgIcon
+        }
+    }
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
