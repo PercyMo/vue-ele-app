@@ -6,6 +6,8 @@ Vue.use(Router)
 
 const Home = r => require.ensure([], () => r(require('views/home/home')), 'Home')
 
+const City = r => require.ensure([], () => r(require('views/city/city')), 'City')
+
 const Msite = r => require.ensure([], () => r(require('views/msite/msite')), 'Msite')
 
 const Search = r => require.ensure([], () => r(require('views/search/search')), 'Search')
@@ -23,6 +25,16 @@ export default new Router({
         {
             path: '/',
             component: Home
+        },
+        // 首页城市列表页
+        {
+            path: 'home',
+            component: Home
+        },
+        // 当前选择城市页
+        {
+            path: '/city/:cityid',
+            component: City
         },
         // 所有商铺列表页
         {

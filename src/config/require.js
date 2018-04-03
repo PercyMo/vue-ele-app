@@ -10,24 +10,21 @@ var require = function(option) {
         baseURL: baseUrl,
         url: option.url || '/',
         timeout: 10000,
-        method: option.method || 'get'
+        method: option.method || 'get',
+        data: option.data || {}
     }
 
     // 'get'请求，数据拼进url
     if (options.method == 'get') {
 		let dataStr = '';
-		Object.keys(option.data).forEach(key => {
-			dataStr += key + '=' + option.data[key] + '&';
+		Object.keys(options.data).forEach(key => {
+			dataStr += key + '=' + options.data[key] + '&';
 		})
 
 		if (dataStr !== '') {
 			dataStr = dataStr.substr(0, dataStr.lastIndexOf('&'));
 			options.url = options.url + '?' + dataStr;
 		}
-    }
-
-    if (options.method == 'post') {
-        options.data = option.data || {}
     }
 
     return axios(options).then((res) => {
